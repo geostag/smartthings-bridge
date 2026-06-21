@@ -1,0 +1,14 @@
+services:
+  smartthingsbridge:
+    container_name: smartthingsbridge
+    environment:
+      - TZ=Europe/Berlin
+    build:
+      context: .
+      dockerfile: dev/smartthingsbridge.Dockerfile
+    ports:
+      - "8091:8000"
+    init: true
+    volumes:
+      - ./data/smartthingsbridge:/data
+    restart: unless-stopped
