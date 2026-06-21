@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)#vje)ornntlaedt(nb###yxlx23(oseg$wxajy7q+(ob!ls7!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["smartthingsbridge.ostertage.de","localhost"]
 
 
 # Application definition
