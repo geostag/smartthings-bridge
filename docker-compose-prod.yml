@@ -1,0 +1,12 @@
+services:
+  smartthingsbridge:
+    container_name: smartthingsbridge
+    image: ghcr.io/geostag/smartthings-bridge:latest
+    environment:
+      - TZ=Europe/Berlin
+    ports:
+      - "8091:8000"
+    init: true
+    volumes:
+      - ./data/smartthingsbridge:/data
+    restart: unless-stopped
