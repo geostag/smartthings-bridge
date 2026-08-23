@@ -1,2 +1,6 @@
 Django==5.2.*
 gunicorn
+paho-mqtt==2.*
+requests==2.*
+cryptography
+python-dotenv
